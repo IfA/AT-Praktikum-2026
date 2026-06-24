@@ -1,18 +1,20 @@
 # Development Setup
 Installing the required Python libraries is mostly operating-system independent. However, the installation of some tools depends on the operating system.
 
-- [Tool Installation](#tool-installations)
+- [Tool Installation](#tool-installation)
     - [Windows](#windows)
     - [Linux](#linux)
 - [Library Installation](#library-installation)
-    - [Python Libraries](#python-libs)
-    - [Webots Configuration](#webot-configuration)
+    - [Python Libraries](#python-libraries)
+    - [Webots Configuration](#webots-configuration)
 - [Git (Optional)](#git-installation-optional)
-# Tool-Installations
+
+
+# Tool-Installation
 We need:
 - Python
 - pip
-- virtualenv (or Pythons build-in `venv` module)
+- virtualenv (or Python's built-in `venv` module)
 
 ## Windows
 - **Python**:  
@@ -21,15 +23,14 @@ We need:
         Important: enable “Add Python to PATH”
     2. Open PowerShell and check:  
         ```
-        python –version
+        python -–version
         ```
 
 - **pip**:  
-    - should be included
+    - Usually included with Python.
 
 - **virtualenv**:  
-    - should be included
-
+    - Usually included with Python.
 
 
 ## Linux (Ubuntu/Debian)
@@ -58,13 +59,13 @@ We need:
 4. If Python is missing, install it from:  https://www.python.org/downloads/
 
 ## Docker
-> I dont know, help needed
+> Not yet documented. Help welcome!
 
 
 
 # Library Installation
-## Python Libs
-### 1. Create virtual environment
+## Python Libraries
+### 1. Create a virtual environment
 ```
 python -m venv at_venv
 ```
@@ -79,7 +80,7 @@ The best practise is using pip in the virtual environment. It will keep all modu
 ### 2. Activate the virtual env
 **Linux/macOS:**
 ```bash
-source /at_venv/bin/activate
+source ./at_venv/bin/activate
 ```
 
 **Windows:**
@@ -87,12 +88,12 @@ source /at_venv/bin/activate
 .\at_venv\Scripts\activate
 ```
 
-### 3. Install needed libs
+### 3. Install needed libraries
 ```
 pip install -r requirements.txt
 ```
 
-# Webot-Configuration
+# Webots-Configuration
 ## Installation
 
 - Go to the official Cyberbotics/Webots website: https://cyberbotics.com/
@@ -116,7 +117,7 @@ Download the Windows installer, e.g. `webots-..._setup.exe.`
     webots
     ```
 
-### MacOs
+### macOS
 Go to the official Cyberbotics/Webots website: https://cyberbotics.com/
 1. Download the `.dmg` installer.
 2. Open the `.dmg` file.
@@ -128,7 +129,7 @@ Webots uses the system Python interpreter by default. Since the required librari
 
 First, activate the virtual environment and locate the Python executable.
 
-Linux:
+Linux/macOS:
 ```
 which python
 ```
@@ -142,15 +143,12 @@ Copy the displayed path and configure Webots to use it:
 Paste your copied path here.
 
 # Git installation (Optional)
-Git is optional, but recommended for keeping track of changes in your Python/Webots controller code and for
-using version control in your project
+Git is optional, but recommended for keeping track of changes in your Python/Webots controller code and for using version control in your project.  
 1. Go to the official Git website: https://git-scm.com/
-2. Download and install Git for your operating system. The official Git documentation provides installation
-instructions and installers for different systems
+2. Download and install Git for your operating system. The official Git documentation provides installation instructions and installers for different systems.  
 3. After installation, check that Git works:
     ```
     git --version
     ```
 - Recommendation:  
-Use Git together with GitHub, GitLab, or another remote repository to keep an online backup
-of your project.
+Use Git together with GitHub, GitLab, or another remote repository to keep an online backup of your project.
