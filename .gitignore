@@ -8,3 +8,5 @@ __pycache__/
 
 # Ignore the .git folder
 .git/
+
+*_venv
