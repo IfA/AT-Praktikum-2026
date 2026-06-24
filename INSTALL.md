@@ -93,6 +93,13 @@ source ./at_venv/bin/activate
 pip install -r requirements.txt
 ```
 
+### 4. Remember to Activate the Virtual Environment
+
+When using an IDE such as VS Code, PyCharm, or Webots (after it has been configured), you usually do not need to activate the virtual environment manually.
+
+If you are working from the command line, you must activate the virtual environment yourself before running your code or installing packages. Simply repeat Step 2 whenever you open a new terminal.
+
+
 # Webots-Configuration
 ## Installation
 
