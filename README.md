@@ -30,3 +30,6 @@ Design and tune a controller that tracks a vertical velocity reference and gener
 * `utils/` — Sensor, motor, and logging utilities.
 
 Good luck!
+
+# Development setup
+Can be found here: `INSTALL.md`
