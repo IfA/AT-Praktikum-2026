@@ -1,0 +1,141 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/BrushedAluminium.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/bitcraze/crazyflie/protos/Crazyflie.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/rocks/protos/Rock.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/panels/protos/Panel.proto"
+
+WorldInfo {
+  basicTimeStep 1
+}
+Viewpoint {
+  orientation -0.05030553464409201 0.05132822698936701 0.9974140395534346 1.5534321666667368
+  position -0.03274570191101578 -1.3600781350123345 0.45465956188067225
+  follow "Crazyflie"
+}
+TexturedBackground {
+  texture "mars"
+}
+Crazyflie {
+  controller "crazyflie_at_praktikum"
+  controllerArgs [
+    ""
+  ]
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2 40
+  floorTileSize 1 1
+  wallThickness 0.04
+  wallHeight 0.01
+  wallAppearance BrushedAluminium {
+    colorOverride 0.2 0.5 1
+  }
+}
+Group {
+  children [
+    Rock {
+      translation -0.5 10.2 0
+      rotation 0.7071067811865475 0 0.7071067811865475 0.6544996938995746
+      name "rock(8)"
+      scale 14
+    }
+    Rock {
+      translation 0 3.5 2
+      rotation 0 0 1 1.9634996938995748
+      name "rock(5)"
+      scale 15
+    }
+    Rock {
+      translation 0 5.1 1.6
+      rotation 0 0 1 1.9634996938995748
+      name "rock(12)"
+      scale 15
+    }
+    Rock {
+      translation 0 5.8 1.6
+      rotation 0 0 1 1.1781003061004252
+      name "rock(14)"
+      scale 15
+    }
+    Rock {
+      translation 0 2 0.2
+      rotation 1 0 0 -1.1780996938995747
+      name "rock(4)"
+      scale 18
+    }
+    Rock {
+      translation -1.4 4.2 0.1
+      rotation 1 0 0 -1.1780996938995747
+      name "rock(11)"
+      scale 18
+    }
+    Rock {
+      translation -0.4 6.6 -0.2
+      rotation 1 0 0 -1.1780996938995747
+      name "rock(13)"
+      scale 18
+    }
+    Rock {
+      translation 0 2.1 2.2
+      name "rock(3)"
+      scale 15
+    }
+    Rock {
+      translation 0 3.8 2.5
+      rotation 0 0 1 1.5707996938995747
+      name "rock(6)"
+      scale 15
+    }
+    Rock {
+      translation 0 2.3 2.6
+      rotation 0 0.7071067811865475 0.7071067811865475 1.5707996938995747
+      name "rock(7)"
+      scale 15
+    }
+    Rock {
+      translation 0 11 0
+      rotation 0.7071067811865475 0 0.7071067811865475 0.6544996938995746
+      name "rock(2)"
+      scale 14
+    }
+    Rock {
+      translation 0 1.5 1.6
+      rotation 0 1 0 0.785398
+      name "rock(1)"
+      scale 8
+    }
+    Rock {
+      translation -0.6 4.1 1.5
+      rotation 0 1 0 0.785398
+      name "rock(9)"
+      scale 8
+    }
+    Rock {
+      translation -0.6 3.1 1.5
+      rotation 0 1 0 1.3089996938995747
+      name "rock(10)"
+      scale 8
+    }
+    Rock {
+      translation 0 1 0
+      rotation 0 0 1 0.6544996938995746
+      scale 12
+    }
+  ]
+}
+Panel {
+  translation -1 -1 0
+  size 0.05 20 2
+  panelsCount 1
+}
+Panel {
+  translation 1 -1 0
+  name "panel(1)"
+  size 0.05 20 2
+  panelsCount 1
+}
